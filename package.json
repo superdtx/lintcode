@@ -1,0 +1,33 @@
+{
+  "name": "lintcode",
+  "version": "1.0.0",
+  "description": "lintcode algorithm practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "lintcode",
+    "algorithm"
+  ],
+  "author": "superDTX",
+  "license": "ISC",
+  "dependencies": {
+    "requirejs": "^2.3.5"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^16.1.1",
+    "chai": "^4.1.2",
+    "karma": "^2.0.0",
+    "karma-browserify": "^5.2.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-mocha": "^1.3.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-requirejs": "^1.1.0",
+    "mocha": "^5.0.2",
+    "watchify": "^3.11.0"
+  }
+}
