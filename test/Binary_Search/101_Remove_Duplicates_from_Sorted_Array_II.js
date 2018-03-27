@@ -1,14 +1,20 @@
-export default function removeDuplicates(A) {
-	let count = 2;
-	const len = A.length;
+import sut from "../../src/Binary_Search/101_Remove_Duplicates_from_Sorted_Array_II";
+import { expect } from "chai";
 
-	while (count < len) {
-		if (A[count - 2] === A[count] && A[count - 1] === A[count]) {
-			A.splice(count, 1);
-		} else {
-			count++;
-		}
-	}
+describe("Remove_Duplicates_from_Sorted_Array_II", () => {
+	it("should return 0 given []", () => {
+		expect(sut([])).to.equals(0);
+	});
 
-	return A.length;
-}
+	it("should return 3 given [1, 2, 3]", () => {
+		expect(sut([1, 2, 3])).to.equals(3);
+	});
+
+	it("should return 4 given [1, 1, 2, 2]", () => {
+		expect(sut([1, 1, 2, 2])).to.equals(4);
+	});
+
+	it("should return 4 given [1, 1, 2, 2, 2]", () => {
+		expect(sut([1, 1, 2, 2, 2])).to.equals(4);
+	});
+});
