@@ -14,11 +14,15 @@ describe("Reverse_Words_in_a_String", () => {
 		expect(sut("How are you?")).to.equals("you? are How");
 	});
 
-	it("should return ' blue is sky the' given 'the sky is blue '", () => {
+	it("should return 'blue is sky the' given 'the sky is blue '", () => {
 		expect(sut("the sky is blue ")).to.equals("blue is sky the");
 	});
 
-	it("should return 'blue is sky the ' given ' the sky is blue'", () => {
+	it("should return 'blue is sky the' given ' the sky is blue'", () => {
+		expect(sut(" the sky is blue")).to.equals("blue is sky the");
+	});
+
+	it("should return 'blue is sky the' given ' the   sky  is  blue'", () => {
 		expect(sut(" the sky is blue")).to.equals("blue is sky the");
 	});
 });
