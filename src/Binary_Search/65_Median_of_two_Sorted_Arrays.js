@@ -42,7 +42,7 @@ function findKth(A, B, k) {
 	const a = A.length >= cutoff ? A[cutoff - 1] : null;
 	const b = B.length >= cutoff ? B[cutoff - 1] : null;
 
-	if ((a && a < b) || !a) {
+	if ((a && a < b) || !b) {
 		return findKth(A.slice(cutoff), B, k - cutoff);
 	}
 

@@ -8,21 +8,33 @@ describe("Rotate_String", () => {
 		expect(s).to.equals("abcdefg");
 	});
 
-	it("should return 'gabcdef' given 'abcdefg' and offset=1", () => {
+	xit("should return 'gabcdef' given 'abcdefg' and offset=1", () => {
 		let s = "abcdefg";
 		sut(s, 1);
 		expect(s).to.equals("gabcdef");
 	});
 
-	it("should return 'fgabcde' given 'abcdefg' and offset=2", () => {
+	xit("should return 'fgabcde' given 'abcdefg' and offset=2", () => {
 		let s = "abcdefg";
 		sut(s, 2);
 		expect(s).to.equals("fgabcde");
 	});
 
-	it("should return 'efgabcd' given 'abcdefg' and offset=3", () => {
+	xit("should return 'efgabcd' given 'abcdefg' and offset=3", () => {
 		let s = "abcdefg";
 		sut(s, 3);
 		expect(s).to.equals("efgabcd");
+	});
+
+	xit("should return 'efgabcd' given 'abcdefg' and offset=52", () => {
+		let s = "abcdefg";
+		sut(s, 52);
+		expect(s).to.equals("efgabcd");
+	});
+
+	it("should return '' given '' and offset=52", () => {
+		let s = "";
+		sut(s, 52);
+		expect(s).to.equals("");
 	});
 });

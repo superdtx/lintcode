@@ -17,7 +17,7 @@ export default function searchInsert(A, target){
 
 	if(A[start] >= target){
 		return start;
-	} else if(A[end] >=target) {
+	} else if(A[end] >= target) {
 		return end;
 	}
 
