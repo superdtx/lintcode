@@ -1,4 +1,4 @@
-import sut from "../../src/Binary_Search/65_Median_of_two_Sorted_Arrays";
+import sut from "../../src/Binary_Search/65_Median_of_Two_Sorted_Arrays";
 import { expect } from 'chai';
 
 describe("Median_of_two_Sorted_Arrays", ()=>{
