@@ -17,7 +17,7 @@ Can you do this in-place without altering the nodes' values?
  * @return: 
  */
 
-import LinkedList, { ListNode } from "../../src/Linked_List/LinkedList";
+import LinkedList, { ListNode } from "./LinkedList";
 
 const reorderList = function (head) {
     if(!head || !head.next){

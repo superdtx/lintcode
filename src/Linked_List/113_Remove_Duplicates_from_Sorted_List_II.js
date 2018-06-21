@@ -13,7 +13,7 @@ Example
  * @return: head of the linked list
  */
 
-import LinkedList, { ListNode } from "../../src/Linked_List/LinkedList";
+import LinkedList, { ListNode } from "./LinkedList";
 
 const deleteDuplicates = function(head) {
 	if (!head) {

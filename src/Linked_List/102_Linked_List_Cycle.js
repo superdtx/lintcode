@@ -12,7 +12,7 @@ Follow up:
 Can you solve it without using extra space?
 */
 
-import LinkedList, { ListNode } from "../../src/Linked_List/LinkedList";
+import LinkedList, { ListNode } from "./LinkedList";
 
 const hasCycle = function(head){
 

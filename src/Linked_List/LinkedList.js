@@ -34,3 +34,10 @@ export class ListNode {
 		this.next = null;
 	}
 }
+
+export class RandomListNode {
+	constructor(val) {
+		this.val = val;
+		this.next = this.random = null;
+	}
+}
