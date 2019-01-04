@@ -28,12 +28,12 @@ class Solution:
         while start + 1 < end:
             mid = start + (end - start) // 2
             
-            if self.column_has_black(image, mid):
+            if any(image[k][mid] == '1' for k in range(m)):
                 end = mid
             else:
                 start = mid
                 
-        if self.column_has_black(image, start):
+        if any(image[k][start] == '1' for k in range(m)):
             return start
                 
         return end
@@ -45,12 +45,12 @@ class Solution:
         while start + 1 < end:
             mid = start + (end - start) // 2
             
-            if self.column_has_black(image, mid):
+            if any(image[k][mid] == '1' for k in range(m)):
                 start = mid
             else:
                 end = mid
                 
-        if self.column_has_black(image, end):
+        if any(image[k][end] == '1' for k in range(m)):
             return end
                 
         return start
@@ -88,12 +88,3 @@ class Solution:
             return end
             
         return start
-        
-    def column_has_black(self, image, mid):
-        m = len(image)
-        
-        for i in range(m):
-            if image[i][mid] == '1':
-                return True
-                
-        return False
